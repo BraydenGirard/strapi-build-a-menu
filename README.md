@@ -3,6 +3,7 @@
 In this article, we'll explore how to create a dynamic website menu by leveraging *Strapi*, an open-source, Node.js based, headless CMS. Strapi is a fantastic platform for developing APIs quickly, which is perfect for feeding data to your website's front end. We'll walk through building a menu similar to Strapi's own, featuring drop-downs, headings, links, and buttons.
 
 ## Setup
+<img width="1603" alt="Screenshot 2023-12-10 at 3 11 37 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/ab4814e7-172b-4f58-9c05-4ff84c66fdb9">
 
 To begin, **please ensure that you have a fresh Strapi v4 project up and running**. We're going to create sections first, these will each form part of the large drop-down in the menu above. We will then create individual links and buttons.
 
