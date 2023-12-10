@@ -36,6 +36,8 @@ Now that we have created a `Section` with internally nested `Link` components, l
 
 A dropdown menu houses multiple sections. In the Components area of Strapi’s admin, create a new component, name it `Dropdown`, and place it under the `Menu` category. Add a `title` field and a `Relation` field linked to `Sections`. Set the relation as 'has many sections', which means a dropdown can contain multiple sections.
 
+<img width="1612" alt="Screenshot 2023-12-10 at 3 32 27 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/80bcdfb8-21ca-4386-85f7-15ebcdeb2a96">
+
 ### Creating the Menu Link Component
 
 Next, let's create menu links. Call this component `Menu Link`, and place it under the `Menu` category. Add `title` and `URL` fields to store the link's name and destination.
@@ -56,13 +58,21 @@ Now that we have all the building blocks in place, let's construct the menu.
 
 Create a new single type called `Main Menu`. Inside it, add a Dynamic Zone named `Main Menu Items`. Add the components–`Dropdown`, `Menu Link`, and `Button` to this zone.
 
+<img width="1609" alt="Screenshot 2023-12-10 at 3 33 02 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/8ae7c582-db64-49e6-bd1d-c69b89741d85">
+
 In the content manager, you can add all three types of components to the Main Menu Items Dynamic Zone.
 
 The Dropdown can be given a title (like 'Product') and sections (like 'Product' and 'Features'). You can add multiple dropdowns, each with a title and related sections.
 
+<img width="1599" alt="Screenshot 2023-12-10 at 3 33 47 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/e7ba0f45-6b7a-400f-9afa-ef17d2f35bd5">
+
 For Menu Links, you can add links like 'Docs' and 'Pricing' with their corresponding URLs.
 
+<img width="1598" alt="Screenshot 2023-12-10 at 3 35 42 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/8b24c2e3-2366-4de3-9850-254a2ea9e975">
+
 For the Button, you can create a button like 'Contact Sales' and provide a URL for it. Make sure to assign a class (`Primary` or `Secondary`) to it.
+
+<img width="1601" alt="Screenshot 2023-12-10 at 3 34 42 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/c0732551-970f-41e5-b514-6078ee5ed296">
 
 After adding all the sections, links, and buttons, save and publish your menu.
 
@@ -72,8 +82,12 @@ Once you have published your menu, you need to ensure that the data is accessibl
 
 Navigate to `Settings` -&gt; `Roles & Permissions` -&gt; `Public User`, and allow `Find` for `Main Menu` and `Sections`. Save the settings.
 
+<img width="1601" alt="Screenshot 2023-12-10 at 3 36 27 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/77909273-ce74-4a2b-b7c1-d81180d6f106">
+
 You can then access the menu configuration by making a get request to: `https://localhost:1337/api/main-menu?populate[0]=MainMenultems&populate[1]=MainMenultems.sections&populate[2]=MainMenultems.sections.links`
 
 The data is returned in JSON format, which can be used to populate the content of your menu on the front end.
+
+<img width="1609" alt="Screenshot 2023-12-10 at 3 37 19 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/e0940f37-f071-4caf-aaae-e1b5a42aff3d">
 
 That’s it! By using Strapi, we've created a flexible system for building out a menu dynamically. This is one of many powerful features Strapi provides and is a testament to its capabilities as one of the rising stars in the CMS space.
