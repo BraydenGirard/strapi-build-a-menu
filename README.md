@@ -20,7 +20,7 @@ Navigate to the "Collection Types" in Strapi Admin and create a new one. Let's c
 
 While still creating the `Section`, add a component and name it `Link`. Create a category to place this component in, the category name does not matter. The component will be created as a repeatable component and should contain a `name` for the link and a `URL` for its destination.
 
-<img width="1610" alt="Screenshot 2023-12-10 at 3 16 25 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/9413c425-a02c-46f4-abdf-9e43dc428be2">
+<img width="1610" alt="Screenshot 2023-12-10 at 3 18 08 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/d23861ad-1a16-44cb-ac76-6fc50a29b9f1">
 
 Additionally, we're going to add two fields: a `text (long)` type for description and an `icon`, which is an image (single-type media).
 
