@@ -26,6 +26,8 @@ Additionally, we're going to add two fields: a `text (long)` type for descriptio
 
 Hit `Save`. You can now go ahead and create several sections under the newly created `Section` collection by creating a section and adding links to it.
 
+<img width="1612" alt="Screenshot 2023-12-10 at 3 19 36 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/f575e4e9-9e33-4d33-9c1e-0b0525585925">
+
 ## Creating Additional Components
 
 Now that we have created a `Section` with internally nested `Link` components, let's create *menu links*, *buttons*, and *drop downs*. Menu links are straightforward additions for the top bar, buttons add interactivity, and dropdown menus improve organization by allowing us to group links based on themes or content.
@@ -38,11 +40,15 @@ A dropdown menu houses multiple sections. In the Components area of Strapi’s a
 
 Next, let's create menu links. Call this component `Menu Link`, and place it under the `Menu` category. Add `title` and `URL` fields to store the link's name and destination.
 
+<img width="1616" alt="Screenshot 2023-12-10 at 3 20 55 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/600851df-f1e8-4296-9445-c73cb342ac9a">
+
 ### Creating the Button Component
 
 Finally, we'll create buttons for actions such as 'Sign Up', 'Contact Us', etc. Name this component `Button`, place it under the `Menu` category, and add a `title` and `URL`.
 
 Additionally, let’s add an enumeration field, `Type`. This field hosts classes to style the button on the front end. For instance, we can have a `Primary` or `Secondary` class, which alters the button's look.
+
+<img width="1610" alt="Screenshot 2023-12-10 at 3 21 53 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/781e317b-ba72-4f55-8860-589f577ccf18">
 
 ## Constructing the Menu
 
