@@ -2,16 +2,25 @@
 
 In this article, we'll explore how to create a dynamic website menu by leveraging *Strapi*, an open-source, Node.js based, headless CMS. Strapi is a fantastic platform for developing APIs quickly, which is perfect for feeding data to your website's front end. We'll walk through building a menu similar to Strapi's own, featuring drop-downs, headings, links, and buttons.
 
-## Setup
 <img width="1603" alt="Screenshot 2023-12-10 at 3 11 37 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/ab4814e7-172b-4f58-9c05-4ff84c66fdb9">
+
+## Setup
+
+<img width="1606" alt="Screenshot 2023-12-10 at 3 14 02 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/0fa53ce3-029e-4f1c-884c-9810a73edf6b">
 
 To begin, **please ensure that you have a fresh Strapi v4 project up and running**. We're going to create sections first, these will each form part of the large drop-down in the menu above. We will then create individual links and buttons.
 
 ## Creating Sections as Collection Types in Strapi
 
+<img width="1613" alt="Screenshot 2023-12-10 at 3 14 44 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/dc903f4b-01d3-4028-92cd-3a9afa082c2e">
+
 Navigate to the "Collection Types" in Strapi Admin and create a new one. Let's call it `Section`. In each section, we'll need a heading (the title to appear at the top) and a `Links` component (to be created shortly) encapsulating all the links inside the section.
 
+<img width="1613" alt="Screenshot 2023-12-10 at 3 15 48 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/743d4c75-0406-40cc-969d-32b4ad18dba0">
+
 While still creating the `Section`, add a component and name it `Link`. Create a category to place this component in, the category name does not matter. The component will be created as a repeatable component and should contain a `name` for the link and a `URL` for its destination.
+
+<img width="1610" alt="Screenshot 2023-12-10 at 3 16 25 PM" src="https://github.com/BraydenGirard/strapi-build-a-menu/assets/3247657/9413c425-a02c-46f4-abdf-9e43dc428be2">
 
 Additionally, we're going to add two fields: a `text (long)` type for description and an `icon`, which is an image (single-type media).
 
